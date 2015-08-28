@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular App</title>
+  <script src="node_modules/angular/angular.js"></script>
+  <script>
+  angular.module('Application', [])
+    .controller('ApplicationController', function ($scope) {
+      $scope.add = function (a, b) {
+        return a + b;
+      };
+    });
+  </script>
+</head>
+<body ng-app="Application" ng-controller="ApplicationController">
+  <h2>Angular App</h2>
+  <p>2 + 3 = {{ add(2, 3) }}</p>
+</body>
+</html>
