@@ -4,6 +4,7 @@
   "description": "Unit testing AngularJS app from Node using Code Extraction technique",
   "main": "index.js",
   "scripts": {
+    "build": "webpack src/add.js src/calc.js src/application.js built.js",
     "test": "mocha src/*-spec.js"
   },
   "repository": {

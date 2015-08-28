@@ -5,6 +5,7 @@
 * `step-0` - initial angular application
 * `step-1` - refactored AngularJS code into separate files
 * `step-2` - unit testing `add` function
+* `step-3` - building single bundle from CommonJS modules using webpack
 
 ### Small print
 
