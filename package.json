@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "benv": "1.1.0",
+    "describe-it": "1.4.0",
     "mocha": "2.2.5"
   }
 }

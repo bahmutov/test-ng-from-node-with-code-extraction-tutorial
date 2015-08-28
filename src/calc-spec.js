@@ -19,6 +19,16 @@ describe('calc module', function () {
     var add = injector.get('add');
     console.assert(add(2, 3) === 5, 'added 2 + 3');
   });
+
+  var describeIt = require('describe-it');
+  var setupEachTime = true;
+  describeIt(__dirname + '/calc.js', 'hello()', setupEachTime, function (getHello) {
+    it('has private "hello"', function () {
+      var hello = getHello();
+      console.assert(hello() === 'hello');
+    });
+  });
+
   afterEach(function destroySyntheticBrowser() {
     benv.teardown(true);
   });

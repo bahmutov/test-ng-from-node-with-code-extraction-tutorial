@@ -1,2 +1,7 @@
+function hello() {
+  return 'hello';
+}
 angular.module('Calc', [])
-  .value('add', require('./add'));
+  .service('add', function addService() {
+    return require('./add');
+  });
