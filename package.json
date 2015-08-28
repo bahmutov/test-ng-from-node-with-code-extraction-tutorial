@@ -30,6 +30,7 @@
     "angular": "1.4.5"
   },
   "devDependencies": {
+    "benv": "1.1.0",
     "mocha": "2.2.5"
   }
 }
