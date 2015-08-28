@@ -3,6 +3,7 @@
 > Test private variables or functions using the Code Extraction technique
 
 * `step-0` - initial angular application
+* `step-1` - refactored AngularJS code into separate files
 
 ### Small print
 
