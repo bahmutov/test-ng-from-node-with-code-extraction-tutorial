@@ -29,6 +29,32 @@ describe('calc module', function () {
     });
   });
 
+  describeIt(__dirname + '/calc.js', 'subService(add)', setupEachTime, function (getSubService) {
+    it('has function', function () {
+      var fn = getSubService();
+      console.assert(typeof fn === 'function');
+    });
+    it('returns sub', function () {
+      var fn = getSubService();
+      function testAdd(a, b) {
+        return a + b;
+      }
+      var sub = fn(testAdd);
+      console.assert(sub(2, 3) === -1);
+    });
+    it('calls the provided testAdd', function () {
+      var fn = getSubService();
+      var testAddCalled;
+      function testAdd(a, b) {
+        testAddCalled = true;
+        return a + b;
+      }
+      var sub = fn(testAdd);
+      console.assert(sub(2, 3) === -1);
+      console.assert(testAddCalled);
+    });
+  });
+
   afterEach(function destroySyntheticBrowser() {
     benv.teardown(true);
   });

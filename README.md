@@ -8,6 +8,7 @@
 * `step-3` - building single bundle from CommonJS modules using webpack
 * `step-4` - unit testing Angular module from Node
 * `step-5` - code extraction for a single private function
+* `step-6` - testing the provider function
 
 ### Small print
 
