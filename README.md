@@ -4,6 +4,7 @@
 
 * `step-0` - initial angular application
 * `step-1` - refactored AngularJS code into separate files
+* `step-2` - unit testing `add` function
 
 ### Small print
 

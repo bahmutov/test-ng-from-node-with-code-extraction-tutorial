@@ -1,4 +1,4 @@
 angular.module('Calc', [])
-  .value('add', function (a, b) {
+  .value('add', function add(a, b) {
     return a + b;
   });
