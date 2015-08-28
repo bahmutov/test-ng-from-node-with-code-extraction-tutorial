@@ -1,0 +1,28 @@
+{
+  "name": "test-ng-from-node-with-code-extraction-tutorial",
+  "version": "1.0.0",
+  "description": "Unit testing AngularJS app from Node using Code Extraction technique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/test-ng-from-node-with-code-extraction-tutorial.git"
+  },
+  "keywords": [
+    "unit",
+    "testing",
+    "testing",
+    "angular",
+    "node",
+    "tutorial"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/test-ng-from-node-with-code-extraction-tutorial/issues"
+  },
+  "homepage": "https://github.com/bahmutov/test-ng-from-node-with-code-extraction-tutorial",
+  "private": true
+}
