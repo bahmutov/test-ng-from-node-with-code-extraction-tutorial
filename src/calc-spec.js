@@ -53,6 +53,12 @@ describe('calc module', function () {
       console.assert(sub(2, 3) === -1);
       console.assert(testAddCalled);
     });
+    it('works with Angular own injection', function () {
+      var subService = getSubService();
+      var injector = angular.injector(['Calc']);
+      var sub = injector.invoke(subService);
+      console.assert(sub(2, 3) === -1);
+    });
   });
 
   afterEach(function destroySyntheticBrowser() {
