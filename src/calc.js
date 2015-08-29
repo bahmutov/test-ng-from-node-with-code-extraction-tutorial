@@ -10,5 +10,6 @@ angular.module('Calc', [])
   .service('add', function addService() {
     return require('./add');
   })
+  .value('hello', hello)
   .service('sub', subService);
 

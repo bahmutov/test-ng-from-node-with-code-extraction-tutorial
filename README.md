@@ -9,6 +9,7 @@
 * `step-4` - unit testing Angular module from Node
 * `step-5` - code extraction for a single private function
 * `step-6` - testing the provider function
+* `step-7` - using Angular dependency injection, injecting different name.
 
 ### Small print
 

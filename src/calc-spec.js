@@ -59,6 +59,13 @@ describe('calc module', function () {
       var sub = injector.invoke(subService);
       console.assert(sub(2, 3) === -1);
     });
+    it('can inject different stuff', function () {
+      var subService = getSubService();
+      var injector = angular.injector(['Calc']);
+      subService.$inject = ['hello'];
+      var sub = injector.invoke(subService);
+      console.assert(sub(2, 3) === 'hello');
+    });
   });
 
   afterEach(function destroySyntheticBrowser() {
