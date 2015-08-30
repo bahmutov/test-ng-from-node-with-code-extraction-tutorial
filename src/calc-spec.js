@@ -29,6 +29,27 @@ describe('calc module', function () {
     });
   });
 
+  describeIt(__dirname + '/calc.js', 'addAsyncService($q, add)', setupEachTime, function (getFn) {
+    var heroin = require('heroin');
+    it('can inject some of our mocks and let the angular inject the rest', function (done) {
+      var addAsyncService = getFn();
+      function mockAdd(a, b) {
+        console.assert(a === 2 && b === 3);
+        return 42;
+      }
+      var mockedAdd = heroin(addAsyncService, {
+        add: mockAdd
+      });
+      mockedAdd.$inject = ['$q'];
+      var injector = angular.injector(['Calc']);
+      var addAsync = injector.invoke(mockedAdd);
+      addAsync(2, 3).then(function (sum) {
+        console.assert(sum === 42);
+        done();
+      });
+    });
+  });
+
   describeIt(__dirname + '/calc.js', 'subService(add)', setupEachTime, function (getSubService) {
     it('has function', function () {
       var fn = getSubService();

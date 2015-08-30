@@ -6,10 +6,16 @@ function subService(add) {
     return add(a, -b);
   };
 }
-angular.module('Calc', [])
+function addAsyncService($q, add) {
+  return function addAsync(a, b) {
+    return $q.when(add(a, b));
+  };
+}
+angular.module('Calc', ['ng'])
   .service('add', function addService() {
     return require('./add');
   })
   .value('hello', hello)
-  .service('sub', subService);
+  .service('sub', subService)
+  .service('addAsync', addAsyncService);
 

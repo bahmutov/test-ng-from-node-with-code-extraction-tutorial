@@ -10,6 +10,9 @@
 * `step-5` - code extraction for a single private function
 * `step-6` - testing the provider function
 * `step-7` - using Angular dependency injection, injecting different name.
+* `step-8` - combining [heroin] injector with Angular DI in single unit test.
+
+[heroin]: https://github.com/bahmutov/heroin
 
 ### Small print
 
