@@ -2,6 +2,9 @@
 
 > Test private variables or functions using the Code Extraction technique
 
+This is a sample repo to go with the tutorial
+[Unit testing Angular from Node like a boss][tutorial].
+
 * `step-0` - initial angular application
 * `step-1` - refactored AngularJS code into separate files
 * `step-2` - unit testing `add` function
@@ -12,6 +15,7 @@
 * `step-7` - using Angular dependency injection, injecting different name.
 * `step-8` - combining [heroin] injector with Angular DI in single unit test.
 
+[tutorial]: http://glebbahmutov.com/blog/unit-testing-angular-from-node-like-a-boss/
 [heroin]: https://github.com/bahmutov/heroin
 
 ### Small print
